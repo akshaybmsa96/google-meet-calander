@@ -24,6 +24,7 @@ section {
   height: 80%;
   padding: 5px 5px 0 5px;
   position: relative;
+  user-select: none;
 }
 
 .timeContainer {
@@ -34,6 +35,7 @@ section {
 .scheduleContainer {
   margin: 2px 5px 2px 5px;
   flex: 11;
+  z-index: 4;
 }
 
 .timeWrapper {
@@ -56,17 +58,17 @@ div.timeDivider {
 }
 
 .meeting {
-  height: 40px;
   color: white;
   font-size: 12px;
-  background-color: rgb(3, 155, 229);
   border-radius: 4px;
   width: 70%;
   position: absolute;
+  z-index: 5;
 }
 
-.meeting span {
-  margin: 2px;
+.meeting-title,
+.meeting-timimgs {
+  margin: 2px 5px;
   font-weight: 500;
   display: block;
 }
